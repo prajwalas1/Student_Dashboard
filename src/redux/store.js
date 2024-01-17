@@ -1,4 +1,5 @@
-import { legacy_createStore as createStore } from "redux";
+
+import { createStore } from "redux";
 
 const initialState = {
   enrolledCourses: [],
@@ -33,6 +34,7 @@ const rootReducer = (state = initialState, action) => {
       return state;
   }
 };
+
 
 const store = createStore(rootReducer);
 
